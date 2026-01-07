@@ -145,10 +145,15 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
         {/* Progress Indicator */}
         <div className="mt-4 pt-4 border-t border-slate-100">
           <div className="flex items-center justify-between text-xs text-slate-500">
-            <span>{project.startDate} - {project.endDate}</span>
+            <div className="flex flex-col gap-1">
+              <span>{project.startDate} - {project.endDate}</span>
+              {project.role && (
+                <span className="text-primary-600 font-medium">Role: {project.role}</span>
+              )}
+            </div>
             <div className="flex items-center gap-1">
-              <div className="w-2 h-2 bg-green-400 rounded-full"></div>
-              <span>Completed</span>
+              <div className={`w-2 h-2 rounded-full ${project.status === 'in-progress' ? 'bg-yellow-400 animate-pulse' : 'bg-green-400'}`}></div>
+              <span>{project.status === 'in-progress' ? 'In Progress' : 'Completed'}</span>
             </div>
           </div>
         </div>

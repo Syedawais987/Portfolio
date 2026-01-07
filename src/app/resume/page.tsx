@@ -33,7 +33,7 @@ export default function ResumePage() {
             Syed Awais Hussain
           </h1>
           <h2 className="text-xl text-slate-600 mb-4">
-            Senior Full-Stack Developer
+            Full-Stack Developer
           </h2>
           <div className="flex flex-wrap justify-center gap-4 text-sm text-slate-600">
             <span>📧 syedawaishussain987@gmail.com</span>
@@ -50,39 +50,10 @@ export default function ResumePage() {
             Professional Summary
           </h3>
           <p className="text-slate-700 leading-relaxed">
-            Passionate Full-Stack Developer with 3+ years of experience specializing in MEAN & MERN Stack technologies. 
-            Expert in building scalable web applications, SaaS platforms, and AI-powered solutions. Proven track record 
-            of delivering high-quality projects for e-commerce, inventory management, and customer service platforms.
+            Full-Stack Developer with 3+ years of experience specializing in Shopify App Development (Public & Private) and MERN Stack.
+            Built production-ready applications including section marketplaces, quote management systems, conversion tools, and real-time
+            speech recognition platforms. Expertise in React, Next.js, Node.js, PostgreSQL, and the complete Shopify ecosystem.
           </p>
-        </section>
-
-        {/* Technical Skills */}
-        <section className="mb-8">
-          <h3 className="text-2xl font-semibold text-primary-700 mb-4 border-b border-slate-300 pb-2">
-            Technical Skills
-          </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {skills.map((category) => (
-              <div key={category.category}>
-                <h4 className="font-semibold text-slate-800 mb-3">
-                  {category.category}
-                </h4>
-                <div className="space-y-1">
-                  {category.technologies.map((tech) => (
-                    <div key={tech.name} className="flex justify-between items-center">
-                      <span className="text-slate-700">{tech.name}</span>
-                      <div className="flex items-center gap-2">
-                        <span className="text-xs text-slate-500">{tech.experience}</span>
-                        <span className="text-sm font-medium text-primary-600">
-                          {tech.proficiency}%
-                        </span>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
         </section>
 
         {/* Professional Experience */}
@@ -125,6 +96,29 @@ export default function ResumePage() {
           </div>
         </section>
 
+        {/* Technical Skills */}
+        <section className="mb-8">
+          <h3 className="text-2xl font-semibold text-primary-700 mb-4 border-b border-slate-300 pb-2">
+            Technical Skills
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {skills.map((category) => (
+              <div key={category.category}>
+                <h4 className="font-semibold text-slate-800 mb-3">
+                  {category.category}
+                </h4>
+                <div className="flex flex-wrap gap-2">
+                  {category.technologies.map((tech) => (
+                    <span key={tech.name} className="text-slate-700 text-sm bg-slate-100 px-3 py-1 rounded-full">
+                      {tech.name}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
         {/* Key Projects */}
         <section className="mb-8">
           <h3 className="text-2xl font-semibold text-primary-700 mb-4 border-b border-slate-300 pb-2">
@@ -133,53 +127,53 @@ export default function ResumePage() {
           <div className="space-y-4">
             <div className="border-l-4 border-accent-400 pl-6">
               <h4 className="font-semibold text-slate-800 mb-1">
-                E-commerce SaaS Platform
+                Muscled Sektions - Shopify Public App
               </h4>
               <p className="text-sm text-slate-600 mb-2">
-                <strong>Technologies:</strong> React, Node.js, MongoDB, Mongoose, Redis, Socket.io, AWS
+                <strong>Technologies:</strong> React, Node.js, Shopify API, PostgreSQL, GCS, GitHub Webhooks
               </p>
               <p className="text-slate-700 text-sm">
-                Full-featured SaaS platform for multi-vendor e-commerce with real-time analytics, 
-                AI-powered recommendations, and automated inventory management. Serves 500+ businesses.
+                Section marketplace with auto-import from GitHub. Features webhook-triggered syncing,
+                admin approval workflow, and support for 30+ section categories.
               </p>
             </div>
 
             <div className="border-l-4 border-accent-400 pl-6">
               <h4 className="font-semibold text-slate-800 mb-1">
-                Smart Inventory Management System
+                BrightLink Quote Management - Private Shopify App
               </h4>
               <p className="text-sm text-slate-600 mb-2">
-                <strong>Technologies:</strong> Angular, Node.js, MongoDB, Mongoose, TensorFlow.js
+                <strong>Technologies:</strong> Remix.js, TypeScript, PostgreSQL, Prisma, Shopify Polaris, Puppeteer
               </p>
               <p className="text-slate-700 text-sm">
-                AI-powered inventory system with predictive analytics, automated reordering, 
-                and real-time tracking. Features machine learning for demand forecasting.
+                Complete quote workflow system with customer management, PDF generation,
+                email integration, and multi-tier payment processing.
               </p>
             </div>
 
             <div className="border-l-4 border-accent-400 pl-6">
               <h4 className="font-semibold text-slate-800 mb-1">
-                Advanced Shopify App Suite
+                VoiceForge - Speech Recognition Platform
               </h4>
               <p className="text-sm text-slate-600 mb-2">
-                <strong>Technologies:</strong> React, Node.js, Shopify API, GraphQL, MongoDB
+                <strong>Technologies:</strong> Python, FastAPI, WebSocket, PostgreSQL, OpenAI Whisper
               </p>
               <p className="text-slate-700 text-sm">
-                Comprehensive Shopify app ecosystem with theme customization, analytics, 
-                marketing automation. Over 10,000+ installations.
+                Real-time speech-to-text platform with sub-500ms latency, speaker diarization
+                for 10+ speakers, and language auto-detection.
               </p>
             </div>
 
             <div className="border-l-4 border-accent-400 pl-6">
               <h4 className="font-semibold text-slate-800 mb-1">
-                AI-Powered Customer Service Platform
+                11Pay - Team Finance Mobile App (Backend)
               </h4>
               <p className="text-sm text-slate-600 mb-2">
-                <strong>Technologies:</strong> React, Node.js, MongoDB, OpenAI API, Socket.io
+                <strong>Technologies:</strong> Supabase, PostgreSQL, TypeScript, React Native/Expo
               </p>
               <p className="text-slate-700 text-sm">
-                Intelligent customer service platform with AI chatbots, ticket management, 
-                and real-time support. Reduced support costs by 40%.
+                Backend for sports team finance app with smart auto-payment allocation,
+                RLS policies, and real-time sync. Available on iOS App Store.
               </p>
             </div>
           </div>
@@ -189,13 +183,10 @@ export default function ResumePage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <section>
             <h3 className="text-xl font-semibold text-primary-700 mb-3 border-b border-slate-300 pb-2">
-              Education & Certifications
+              Education
             </h3>
             <ul className="space-y-2 text-slate-700">
               <li>• <strong>Bachelor&apos;s in Computer Science</strong></li>
-              <li>• <strong>AWS Certified Developer</strong></li>
-              <li>• <strong>MongoDB Certified Developer</strong></li>
-              <li>• <strong>Shopify Partner Certification</strong></li>
             </ul>
           </section>
 

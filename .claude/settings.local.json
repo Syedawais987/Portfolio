@@ -7,7 +7,8 @@
       "Bash(npm run dev:*)",
       "Bash(npm install:*)",
       "Bash(npm run build:*)",
-      "Bash(git init:*)"
+      "Bash(git init:*)",
+      "WebFetch(domain:zenithmedcare.com)"
     ],
     "deny": []
   }

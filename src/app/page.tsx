@@ -32,9 +32,9 @@ export default function Home() {
               About <span className="text-gradient">Me</span>
             </h2>
             <p className="text-lg text-slate-600 max-w-3xl mx-auto mb-8">
-              I&apos;m a passionate Full-Stack Developer with over 3 years of experience 
-              building robust web applications. Specializing in MEAN & MERN stack technologies, 
-              I create scalable solutions that drive business growth.
+              Full-Stack Developer with 3+ years of experience building Shopify apps and web applications.
+              From public app marketplaces to real-time speech recognition platforms, I deliver
+              production-ready solutions using React, Node.js, and modern cloud technologies.
             </p>
             <Link 
               href="/about" 
@@ -61,8 +61,8 @@ export default function Home() {
               Featured <span className="text-gradient">Projects</span>
             </h2>
             <p className="text-lg text-slate-600 max-w-3xl mx-auto">
-              Here are some of my recent projects showcasing expertise in 
-              full-stack development, cloud solutions, and modern web technologies.
+              Real projects I&apos;ve built - from Shopify public apps to speech recognition platforms.
+              Each project represents a real business problem solved with modern technologies.
             </p>
           </motion.div>
 
@@ -98,8 +98,8 @@ export default function Home() {
               Technical <span className="text-gradient">Skills</span>
             </h2>
             <p className="text-lg text-slate-600 max-w-3xl mx-auto">
-              Proficient in modern technologies and frameworks to build 
-              scalable, performant applications.
+              From Shopify&apos;s ecosystem to backend APIs and cloud infrastructure -
+              the technologies I use daily to build production applications.
             </p>
           </motion.div>
 
@@ -120,8 +120,8 @@ export default function Home() {
               Let&apos;s Build Something Amazing Together
             </h2>
             <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90">
-              I&apos;m available for freelance projects and full-time opportunities. 
-              Let&apos;s discuss how I can help bring your ideas to life.
+              Looking for a developer for your Shopify app, web application, or backend system?
+              Let&apos;s discuss how I can help bring your ideas to production.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

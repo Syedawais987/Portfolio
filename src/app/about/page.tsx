@@ -11,9 +11,9 @@ import { ArrowDownTrayIcon, MapPinIcon, CalendarIcon } from '@heroicons/react/24
 export default function AboutPage() {
   const stats = [
     { label: 'Years of Experience', value: '3+', icon: '💼' },
-    { label: 'Projects Completed', value: '15+', icon: '🚀' },
-    { label: 'Technologies Mastered', value: '20+', icon: '⚡' },
-    { label: 'Happy Clients', value: '10+', icon: '😊' }
+    { label: 'Shopify Apps Built', value: '4+', icon: '🛒' },
+    { label: 'Technologies Used', value: '25+', icon: '⚡' },
+    { label: 'Freelance Projects', value: '5+', icon: '🚀' }
   ]
 
   return (
@@ -33,8 +33,8 @@ export default function AboutPage() {
               About <span className="text-gradient">Me</span>
             </h1>
             <p className="text-xl text-slate-600 mb-8">
-              Passionate Full-Stack Developer with expertise in MEAN & MERN Stack technologies 
-              and a track record of delivering scalable solutions.
+              Full-Stack Developer specializing in Shopify App Development and MERN Stack,
+              turning complex business requirements into production-ready applications.
             </p>
             
             {/* Quick Info */}
@@ -108,32 +108,29 @@ export default function AboutPage() {
               </h2>
               <div className="prose prose-slate max-w-none">
                 <p className="text-lg text-slate-600 mb-6">
-                  I&apos;m a passionate Full-Stack Developer with over 3 years of experience 
-                  building robust web applications and innovative solutions. My journey 
-                  began with a curiosity for how things work on the web, which led me 
-                  to dive deep into modern technologies.
-                </p>
-                
-                <p className="text-slate-600 mb-6">
-                  Currently working at <strong>MUSCLED Inc</strong>, I specialize in the 
-                  MEAN stack and have extensive experience with Shopify development. 
-                  I&apos;ve had the privilege of working with companies like PinkSurfing and 
-                  Syntecx Solution, where I&apos;ve contributed to building scalable applications 
-                  that serve thousands of users.
+                  I&apos;m a Full-Stack Developer with over 3 years of hands-on experience
+                  building production applications. My expertise lies in <strong>Shopify App Development</strong> (both public and private apps) and the <strong>MERN Stack</strong>,
+                  delivering solutions that solve real business problems.
                 </p>
 
                 <p className="text-slate-600 mb-6">
-                  What drives me is the challenge of solving complex problems with elegant 
-                  solutions. Whether it&apos;s integrating payment systems, optimizing database 
-                  queries, or creating intuitive user interfaces, I approach each project 
-                  with attention to detail and a focus on quality.
+                  Currently at <strong>MUSCLED Inc</strong>, I&apos;ve built multiple Shopify apps
+                  including <em>Muscled Sektions</em> (a section marketplace), <em>BrightLink Quote Management</em> (a private quote workflow app), and currently developing <em>StyleUP</em> (a conversion booster with 20+ app blocks). Each project pushed me to master
+                  Remix, Prisma, and the full Shopify ecosystem.
+                </p>
+
+                <p className="text-slate-600 mb-6">
+                  At <strong>PinkSurfing</strong>, I worked as a Backend Developer building
+                  <em> VoiceForge</em> - a real-time speech recognition platform using Python,
+                  FastAPI, and WebSockets. This experience taught me about building
+                  low-latency streaming systems and working with AI/ML technologies.
                 </p>
 
                 <p className="text-slate-600">
-                  When I&apos;m not coding, you&apos;ll find me exploring new technologies, 
-                  contributing to open-source projects, or sharing knowledge with the 
-                  developer community. I believe in continuous learning and staying 
-                  updated with the latest industry trends.
+                  I also take on freelance projects, having delivered websites for clients
+                  including <em>AK K9 Security Services</em> and <em>Zenith Med Care</em>, plus
+                  backend work for the <em>11Pay</em> mobile app. I enjoy the variety of
+                  challenges that come with different industries and project types.
                 </p>
               </div>
             </motion.div>
@@ -160,16 +157,16 @@ export default function AboutPage() {
               </div>
 
               {/* Floating Tech Icons */}
-              <div className="absolute -top-4 -left-4 w-16 h-16 bg-gradient-to-br from-blue-400 to-blue-600 rounded-lg shadow-lg flex items-center justify-center text-white font-bold">
-                JS
+              <div className="absolute -top-4 -left-4 w-16 h-16 bg-gradient-to-br from-green-400 to-green-600 rounded-lg shadow-lg flex items-center justify-center text-white font-bold text-xs">
+                Shopify
               </div>
-              <div className="absolute -top-4 -right-4 w-16 h-16 bg-gradient-to-br from-green-400 to-green-600 rounded-lg shadow-lg flex items-center justify-center text-white font-bold">
-                Node
+              <div className="absolute -top-4 -right-4 w-16 h-16 bg-gradient-to-br from-slate-600 to-slate-800 rounded-lg shadow-lg flex items-center justify-center text-white font-bold">
+                Next
               </div>
-              <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-gradient-to-br from-red-400 to-red-600 rounded-lg shadow-lg flex items-center justify-center text-white font-bold">
-                NG
+              <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-gradient-to-br from-emerald-400 to-emerald-600 rounded-lg shadow-lg flex items-center justify-center text-white font-bold text-xs">
+                Supabase
               </div>
-              <div className="absolute -bottom-4 -right-4 w-16 h-16 bg-gradient-to-br from-purple-400 to-purple-600 rounded-lg shadow-lg flex items-center justify-center text-white font-bold">
+              <div className="absolute -bottom-4 -right-4 w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-700 rounded-lg shadow-lg flex items-center justify-center text-white font-bold">
                 TS
               </div>
             </motion.div>

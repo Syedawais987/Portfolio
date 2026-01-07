@@ -167,7 +167,7 @@ const Footer = () => {
           </div>
           
           <div className="text-slate-400 text-sm">
-            Built with ❤️ using Next.js & Tailwind CSS
+            Designed & Developed by Syed Awais Hussain
           </div>
         </motion.div>
       </div>
