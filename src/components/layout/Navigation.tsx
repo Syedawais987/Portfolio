@@ -22,7 +22,6 @@ const Navigation = () => {
     { name: 'Home', href: '/' },
     { name: 'About', href: '/about' },
     { name: 'Projects', href: '/projects' },
-    { name: 'Resume', href: '/resume' },
     { name: 'Contact', href: '/contact' }
   ]
 
@@ -71,20 +70,6 @@ const Navigation = () => {
                 </Link>
               </motion.div>
             ))}
-            
-            {/* Resume Download Button */}
-            <motion.div
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.4 }}
-            >
-              <Link
-                href="/resume"
-                className="btn-primary text-sm"
-              >
-                Resume
-              </Link>
-            </motion.div>
           </div>
 
           {/* Mobile menu button */}
@@ -130,21 +115,6 @@ const Navigation = () => {
                     </Link>
                   </motion.div>
                 ))}
-                
-                <motion.div
-                  initial={{ opacity: 0, x: -20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.3, delay: 0.4 }}
-                  className="pt-2"
-                >
-                  <Link
-                    href="/resume"
-                    className="btn-primary text-sm inline-block"
-                    onClick={handleLinkClick}
-                  >
-                    View Resume
-                  </Link>
-                </motion.div>
               </div>
             </motion.div>
           )}

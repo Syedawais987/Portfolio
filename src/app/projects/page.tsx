@@ -159,12 +159,6 @@ export default function ProjectsPage() {
               >
                 Get In Touch
               </a>
-              <Link
-                href="/resume"
-                className="border border-white/30 text-white px-8 py-3 rounded-lg font-medium hover:bg-white/10 transition-colors"
-              >
-                View Resume
-              </Link>
             </div>
           </motion.div>
         </div>

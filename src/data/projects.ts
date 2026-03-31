@@ -358,6 +358,115 @@ export const projects: Project[] = [
     company: 'Freelance',
     status: 'completed'
   }
+  ,
+  // 9. Shopify Subscription App
+  {
+    id: 'shopify-subscription-app',
+    title: 'Shopify Subscription App',
+    description:
+      'Full-featured Shopify subscription management app with Subscribe & Save, volume pricing tiers, customer portal, analytics, and in-app billing.',
+    longDescription:
+      'Built a comprehensive Shopify subscription management app using Remix, Express, Prisma, and Polaris. The app supports Subscribe & Save plans, tiered volume pricing, subscription contract management, a customer self-service portal (Customer Account UI Extension), analytics dashboards, dunning management, and Shopify Billing API integration.',
+    technologies: [
+      'Remix',
+      'Express.js',
+      'Prisma',
+      'PostgreSQL',
+      'Shopify Polaris',
+      'TypeScript',
+      'Shopify Billing API',
+      'Shopify Functions',
+      'Webhooks'
+    ],
+    features: [
+      'Subscribe & Save plans with frequency tiers and discounts',
+      'Tier-based volume pricing synced via metafields',
+      'Subscription contract management (pause, cancel, skip, swap)',
+      'Customer portal for self-service subscription changes',
+      'Analytics dashboards for subscriptions & discounts',
+      'Dunning management for failed payments',
+      'Plan gating and in-app billing with trials',
+      'Webhook-driven billing status synchronization'
+    ],
+    challenges: [
+      'Designing flexible subscription & pricing rules across products',
+      'Ensuring reliable sync between app state and Shopify',
+      'Building responsive admin UX in Polaris for complex workflows',
+      'Tracking analytics accurately across changing configurations'
+    ],
+    solutions: [
+      'Metafield-backed data model with clear versioning strategy',
+      'Webhook verification, retries, and idempotent handlers',
+      'Polaris-driven UI patterns with guided multi-step flows',
+      'Event-driven metrics pipeline and consistent identifiers'
+    ],
+    image: '/images/projects/shopify-subscription-app.png',
+    images: [
+      '/images/projects/shopify-subscription-app-dashboard.png',
+      '/images/projects/shopify-subscription-app-portal.png'
+    ],
+    category: 'shopify',
+    startDate: '2025-01',
+    endDate: 'Present',
+    company: 'Freelance',
+    status: 'in-progress'
+  },
+  // 10. Aurora Wellness Health
+  {
+    id: 'aurora-wellness-health',
+    title: 'Aurora Wellness Health',
+    description: 'Marketing website for a wellness/health brand with clear service messaging and modern responsive UI.',
+    longDescription:
+      'Designed and built a modern, responsive marketing website focused on clarity, trust, and conversion. Optimized layout, typography, and CTAs to help users quickly understand offerings and take action.',
+    technologies: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Vercel'],
+    features: [
+      'Mobile-first responsive layout',
+      'SEO-friendly page structure',
+      'Conversion-focused CTAs and sections',
+      'Fast performance with modern frontend stack'
+    ],
+    challenges: [
+      'Balancing design aesthetics with fast performance',
+      'Structuring content for clarity and conversion'
+    ],
+    solutions: [
+      'Component-based layout with consistent spacing and hierarchy',
+      'Performance-focused assets and clean, semantic structure'
+    ],
+    image: '/images/projects/aurora-wellness-health.png',
+    images: ['/images/projects/aurora-wellness-health-home.png'],
+    liveUrl: 'https://aurorawellnesshealth.org/',
+    category: 'web',
+    startDate: '2025-02',
+    endDate: '2025-03',
+    company: 'Freelance',
+    status: 'completed'
+  },
+  // 11. Xero Consultancy
+  {
+    id: 'xero-consultancy',
+    title: 'Xero Consultancy',
+    description: 'Consultancy website with modern UI, clear service sections, and fast loading pages.',
+    longDescription:
+      'Built a clean consultancy website with a focus on credibility, clear positioning, and responsive design. Implemented a structured layout for services and a smooth user journey across key pages.',
+    technologies: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Vercel'],
+    features: [
+      'Responsive pages and sections',
+      'Clear service and value proposition layout',
+      'Optimized UX for quick navigation',
+      'Deployed on Vercel'
+    ],
+    challenges: ['Presenting complex services simply', 'Maintaining consistent design system across pages'],
+    solutions: ['Reusable section components and consistent typography scale', 'Iterative UI refinements based on content hierarchy'],
+    image: '/images/projects/xero-consultancy.png',
+    images: ['/images/projects/xero-consultancy-home.png'],
+    liveUrl: 'https://xero-consultancy-4a6a.vercel.app/',
+    category: 'web',
+    startDate: '2025-03',
+    endDate: '2025-03',
+    company: 'Freelance',
+    status: 'completed'
+  }
 ]
 
 export const skills = [

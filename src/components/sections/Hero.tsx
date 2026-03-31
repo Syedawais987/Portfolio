@@ -139,12 +139,6 @@ const Hero = () => {
               <Link href="/projects" className="btn-primary text-center">
                 View My Projects
               </Link>
-              <Link
-                href="/resume"
-                className="btn-secondary text-center"
-              >
-                View Resume
-              </Link>
             </motion.div>
 
             {/* Tech Stack */}

@@ -3,7 +3,6 @@
 import { motion } from 'framer-motion'
 import Navigation from '@/components/layout/Navigation'
 import Footer from '@/components/layout/Footer'
-import ContactForm from '@/components/ui/ContactForm'
 import { 
   EnvelopeIcon, 
   MapPinIcon, 
@@ -145,14 +144,13 @@ export default function ContactPage() {
       {/* Contact Section */}
       <section className="section-padding">
         <div className="container-max">
-          <div className="grid lg:grid-cols-3 gap-8">
+          <div className="grid gap-8 lg:grid-cols-2 lg:items-start">
             {/* Contact Info */}
-            <div className="lg:col-span-1">
+            <div>
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6 }}
-                className="sticky top-24"
               >
                 <h2 className="text-2xl font-bold text-slate-900 mb-6">
                   Get In Touch
@@ -216,14 +214,43 @@ export default function ContactPage() {
               </motion.div>
             </div>
 
-            {/* Contact Form */}
-            <div className="lg:col-span-2">
+            {/* Form Hidden: Quick Actions */}
+            <div>
               <motion.div
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
+                className="card p-8"
               >
-                <ContactForm />
+                <h3 className="text-xl font-bold text-slate-900 mb-3">
+                  Prefer a quick message?
+                </h3>
+                <p className="text-slate-600 mb-6">
+                  For the fastest response, reach out via email or WhatsApp. I typically reply within 24 hours.
+                </p>
+
+                <div className="grid sm:grid-cols-2 gap-4">
+                  <a
+                    href="mailto:syedawaishussain987@gmail.com"
+                    className="btn-primary text-center"
+                  >
+                    Email Me
+                  </a>
+                  <a
+                    href="https://wa.me/923106723901"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-secondary text-center"
+                  >
+                    WhatsApp
+                  </a>
+                </div>
+
+                <div className="mt-6 border-t border-slate-200 pt-6">
+                  <p className="text-sm text-slate-500">
+                    Tip: include your timeline, budget range, and any reference links to help me respond quickly.
+                  </p>
+                </div>
               </motion.div>
             </div>
           </div>

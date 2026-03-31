@@ -6,7 +6,7 @@ import Navigation from '@/components/layout/Navigation'
 import Footer from '@/components/layout/Footer'
 import Timeline from '@/components/ui/Timeline'
 import SkillsMatrix from '@/components/ui/SkillsMatrix'
-import { ArrowDownTrayIcon, MapPinIcon, CalendarIcon } from '@heroicons/react/24/outline'
+import { MapPinIcon, CalendarIcon } from '@heroicons/react/24/outline'
 
 export default function AboutPage() {
   const stats = [
@@ -49,19 +49,6 @@ export default function AboutPage() {
               </div>
             </div>
 
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-            >
-              <Link
-                href="/resume"
-                className="btn-primary inline-flex items-center gap-2"
-              >
-                <ArrowDownTrayIcon className="w-5 h-5" />
-                View Resume
-              </Link>
-            </motion.div>
           </motion.div>
         </div>
       </section>
