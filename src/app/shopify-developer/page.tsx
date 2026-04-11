@@ -72,7 +72,7 @@ export default function ShopifyLandingPage() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <a href="#hero" className="text-lg font-semibold text-slate-900 tracking-tight">
-              awais<span className="text-primary-600">.</span>
+              Syed Awais<span className="text-primary-600">.</span>
             </a>
             <div className="hidden md:flex items-center gap-8">
               <a href="#services" className="text-[13px] text-slate-500 hover:text-slate-900 transition-colors font-medium">Services</a>
@@ -120,16 +120,6 @@ export default function ShopifyLandingPage() {
 
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-20 relative z-10">
           <div className="max-w-3xl">
-            <motion.div
-              initial={{ opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4 }}
-              className="inline-flex items-center gap-2 px-3 py-1.5 bg-green-50 border border-green-200 rounded-full text-xs text-green-700 font-medium mb-8"
-            >
-              <span className="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse" />
-              Available now &mdash; 2 slots left this month
-            </motion.div>
-
             <motion.h1
               initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
@@ -594,7 +584,7 @@ export default function ShopifyLandingPage() {
                 Email
               </a>
               <a
-                href="https://wa.me/923106723901"
+                href="https://wa.me/923106723901?text=Hi%20Awais%2C%20I%27d%20like%20to%20discuss%20a%20Shopify%20project"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl border border-slate-200 text-sm font-medium text-slate-600 hover:border-slate-300 hover:bg-slate-50 transition-all duration-200"
